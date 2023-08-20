@@ -1,0 +1,17 @@
+{
+    "manifest_version": 3,
+    "name": "Trophy Date Scraper",
+    "version": "1.0",
+    "description": "Scrapes trophy names and dates from the page and sorts by date.",
+    "permissions": ["activeTab", "scripting"],
+    "action": {
+      "default_popup": "popup.html"
+    },
+    "content_scripts": [
+      {
+        "matches": ["<all_urls>"],
+        "js": ["content.js"]
+      }
+    ]
+  }
+  
