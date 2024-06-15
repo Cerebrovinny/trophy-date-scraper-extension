@@ -1,10 +1,30 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>Trophy Date Scraper</title>
-</head>
-<body>
-  <button id="scrape">Scrape Trophy Dates</button>
-  <script src="popup.js"></script>
-</body>
+  <head>
+    <title>Trophy Date Scraper</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 20px;
+      }
+      #trophy-list {
+        margin-top: 20px;
+      }
+      .trophy-item {
+        border-bottom: 1px solid #ccc;
+        padding: 10px 0;
+      }
+      .trophy-name {
+        font-weight: bold;
+      }
+      .trophy-date {
+        color: #555;
+      }
+    </style>
+  </head>
+  <body>
+    <button id="scrape">Scrape Trophy Dates</button>
+    <div id="trophy-list"></div>
+    <script src="popup.js"></script>
+  </body>
 </html>
